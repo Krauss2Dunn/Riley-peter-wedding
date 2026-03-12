@@ -40,9 +40,12 @@ body {
 }
 
 .hero-text h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 72px;
-  margin-bottom: 10px;
+  font-family: 'Fraunces', serif;
+  font-size: clamp(56px, 11vw, 120px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 18px;
 }
 
 .hero-text p {
