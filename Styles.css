@@ -400,3 +400,85 @@ html {
     transform: translate3d(-1%, 2%, 0) scale(1.02);
   }
 }
+.things-section {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.things-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.things-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(34px, 5vw, 56px);
+  color: #200142;
+  margin: 0 0 20px;
+}
+
+.things-intro {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  color: #3f3a48;
+}
+
+.things-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.things-card {
+  background: #fdfbf5;
+  border: 1px solid rgba(32, 1, 66, 0.08);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 8px 26px rgba(32, 1, 66, 0.05);
+}
+
+.things-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #8c2e3e;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.things-card h4 {
+  margin: 0 0 12px;
+  font-family: 'Fraunces', serif;
+  color: #200142;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.things-card p {
+  margin: 0;
+  color: #4b4658;
+  line-height: 1.6;
+}
+
+.things-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #8c2e3e;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.things-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .things-grid {
+    grid-template-columns: 1fr;
+  }
+}
