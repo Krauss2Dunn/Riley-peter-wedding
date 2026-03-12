@@ -482,3 +482,50 @@ html {
     grid-template-columns: 1fr;
   }
 }
+.registry-section {
+  padding: 120px 20px;
+  background: #fffdf6;
+  text-align: center;
+}
+
+.registry-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.registry-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(36px, 5vw, 60px);
+  color: #200142;
+  margin-bottom: 20px;
+}
+
+.registry-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4b4658;
+  margin-bottom: 40px;
+}
+
+.registry-button-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.registry-button {
+  display: inline-block;
+  padding: 16px 34px;
+  background: #8c2e3e;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.registry-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
