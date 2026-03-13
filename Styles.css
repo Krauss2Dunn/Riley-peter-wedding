@@ -52,7 +52,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  opacity: 0.85;
+  opacity: 0.75;
 }
 .hero-text h1 {
   font-family: 'Fraunces', serif;
@@ -68,9 +68,9 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: 1.2em;
-  margin: 0 0.10em;
+  margin: 0 0.08em;
   display: inline-block;
-  transform: translateY(-0.05em);
+  transform: translateY(-0.08em);
   color: #fff1b5;
 }
 .hero-text p {
