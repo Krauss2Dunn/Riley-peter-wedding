@@ -59,7 +59,7 @@ body {
   font-size: clamp(56px, 11vw, 120px);
   font-weight: 900;
   line-height: 0.95;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   margin: 0 0 18px;
   text-transform: uppercase;
 }
