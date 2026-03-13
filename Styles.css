@@ -586,3 +586,75 @@ html {
   text-transform: uppercase;
   color: #8c2e3e;
 }
+.faq-section {
+  padding: 120px 20px;
+  background: #fffdf8;
+}
+
+.faq-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(36px, 5vw, 60px);
+  color: #200142;
+  margin: 0 0 36px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid rgba(32, 1, 66, 0.08);
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0 8px 24px rgba(32, 1, 66, 0.05);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 24px 26px;
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  color: #200142;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  color: #8c2e3e;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+.faq-answer {
+  padding: 0 26px 24px;
+}
+
+.faq-answer p {
+  margin: 0 0 14px;
+  line-height: 1.7;
+  color: #4b4658;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
