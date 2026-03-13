@@ -706,3 +706,39 @@ html {
 .reveal-card:nth-child(6) {
   transition-delay: 0.4s;
 }
+.site-footer {
+  padding: 80px 20px;
+  background: #200142;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  color: #fff1b5;
+  margin-bottom: 10px;
+}
+
+.footer-date {
+  font-size: 16px;
+  color: #c1dbe8;
+  margin-bottom: 6px;
+}
+
+.footer-location {
+  font-size: 16px;
+  color: #c1dbe8;
+  margin-bottom: 18px;
+}
+
+.footer-note {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff1b5;
+}
