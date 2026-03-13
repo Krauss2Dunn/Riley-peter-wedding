@@ -59,9 +59,19 @@ body {
   font-size: clamp(56px, 11vw, 120px);
   font-weight: 900;
   line-height: 0.95;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.12em;
   margin: 0 0 18px;
   text-transform: uppercase;
+}
+.amp {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 0 0.18em;
+  display: inline-block;
+  transform: translateY(-0.05em);
+  color: #fff1b5;
 }
 .hero-text p {
   font-size: 20px;
