@@ -822,14 +822,28 @@ html {
 
 .gate-content h1 {
   font-family: 'Fraunces', serif;
-  font-size: clamp(42px, 9vw, 90px);
+  font-size: clamp(36px, 8vw, 90px);
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: 0.04em;
   margin: 0 0 20px;
   text-transform: uppercase;
-  text-align: center;
   white-space: nowrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.08em;
+}
+.gate-content .amp {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.15em;
+  margin: 0;
+  display: inline-block;
+  transform: translateY(-0.06em);
+  color: #fff1b5;
 }
 
 
