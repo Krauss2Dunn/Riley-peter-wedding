@@ -863,20 +863,25 @@ html {
 }
 
 .gate-input {
-  width: min(100%, 360px);
-  padding: 16px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
+  width: min(100%, 320px);
+  padding: 10px 4px;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.6);
+  background: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  backdrop-filter: blur(10px);
   outline: none;
+  letter-spacing: 0.08em;
 }
 
 .gate-input::placeholder {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.12em;
+}
+
+.gate-input:focus {
+  border-bottom: 2px solid #fff1b5;
 }
 
 .gate-button {
