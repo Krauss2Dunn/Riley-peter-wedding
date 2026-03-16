@@ -62,14 +62,15 @@ body {
   opacity: 0.75;
 }
 .hero-text h1 {
-  font-family: 'Ragita', serif;
-  font-size: clamp(42px, 9vw, 120px);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: 0.06em;
+  font-family: "Ragita", serif;
+  font-size: clamp(64px, 12vw, 140px);
+  font-weight: normal;
+  line-height: 1.1;
   margin: 0 0 18px;
-  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: 0;
 }
+
 .amp {
   font-family: 'Ragita', serif;
   font-weight: 400;
@@ -827,19 +828,15 @@ html {
 }
 
 .gate-content h1 {
-  font-family: 'Ragita', serif;
-  font-size: clamp(36px, 8vw, 90px);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: 0.04em;
+  font-family: "Ragita", serif;
+  font-size: clamp(54px, 10vw, 110px);
+  font-weight: normal;
+  line-height: 1.1;
   margin: 0 0 20px;
-  white-space: nowrap;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 0.08em;
+  text-transform: none;
+  letter-spacing: 0;
 }
+
 .gate-content .amp {
   font-family: 'Ragita', serif;
   font-weight: 400;
