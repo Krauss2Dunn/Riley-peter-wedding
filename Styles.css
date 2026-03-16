@@ -825,11 +825,12 @@ html {
   font-size: clamp(42px, 9vw, 90px);
   font-weight: 900;
   line-height: 0.95;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   margin: 0 0 20px;
   text-transform: uppercase;
-  white-space: nowrap;
+  text-align: center;
 }
+
 
 .gate-subtitle {
   max-width: 460px;
