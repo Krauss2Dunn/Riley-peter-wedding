@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Ragita";
+  src: url("Ragita.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -55,17 +62,16 @@ body {
   opacity: 0.75;
 }
 .hero-text h1 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Ragita', serif;
   font-size: clamp(42px, 9vw, 120px);
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: 0.06em;
   margin: 0 0 18px;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 .amp {
-  font-family: 'Fraunces', serif;
+  font-family: 'Ragita', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.2em;
@@ -821,13 +827,12 @@ html {
 }
 
 .gate-content h1 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Ragita', serif;
   font-size: clamp(36px, 8vw, 90px);
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: 0.04em;
   margin: 0 0 20px;
-  text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
   display: flex;
@@ -836,7 +841,7 @@ html {
   gap: 0.08em;
 }
 .gate-content .amp {
-  font-family: 'Fraunces', serif;
+  font-family: 'Ragita', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.15em;
