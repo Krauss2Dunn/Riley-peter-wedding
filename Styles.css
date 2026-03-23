@@ -17,7 +17,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "HeroSubhead";
+  src: url("Loveletter No 9.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "HeroSubheadAlt";
+  src: url("Loveletter No 9.ttf") format("truetype");
+  font-weight: normal;
+  
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -95,8 +106,11 @@ body {
   color: #fff1b5;
 }
 .hero-text p {
+  font-family: "HeroSubhead", serif;
   font-size: 20px;
-  margin: 5px;
+  margin: 5px 0;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
 .announcement {
