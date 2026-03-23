@@ -5,6 +5,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roseritta";
+  src: url("assets/fonts/Roseritta.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Loveletter No 9";
+  src: url("assets/fonts/Loveletter No 9.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -62,7 +75,7 @@ body {
   opacity: 0.75;
 }
 .hero-text h1 {
-  font-family: "Ragita", serif;
+  font-family: "Roseritta", serif;
   font-size: clamp(64px, 12vw, 140px);
   font-weight: normal;
   line-height: 1.1;
@@ -72,7 +85,7 @@ body {
 }
 
 .amp {
-  font-family: 'Ragita', serif;
+  font-family: 'Roseritta', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.2em;
