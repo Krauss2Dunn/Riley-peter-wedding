@@ -841,7 +841,7 @@ html {
 }
 
 .gate-content h1 {
-  font-family: "Ragita", serif;
+  font-family: "Roseritta", serif;
   font-size: clamp(54px, 10vw, 110px);
   font-weight: normal;
   line-height: 1.1;
@@ -851,7 +851,7 @@ html {
 }
 
 .gate-content .amp {
-  font-family: 'Ragita', serif;
+  font-family: 'Roseritta', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1.15em;
