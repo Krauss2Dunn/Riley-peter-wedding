@@ -111,7 +111,7 @@ body {
   margin: 0 0.08em;
   display: inline-block;
   transform: translateY(-0.08em);
-  color: #fff1b5;
+  color: inherit;
 }
 .hero-text p {
   font-family: "Loveletter No 9", serif;
@@ -1197,7 +1197,7 @@ html {
       rgba(239, 222, 249, 0.0) 58px,
       rgba(239, 222, 249, 0.0) 92px
     );
-  opacity: 0.45;
+  opacity: 0.25;
   pointer-events: none;
   z-index: 0;
 }
@@ -1226,7 +1226,7 @@ html {
       rgba(203, 220, 223, 0.0) 72px
     );
   filter: blur(1px);
-  opacity: 0.28;
+  opacity: 0.16;
   pointer-events: none;
   z-index: 0;
 }
