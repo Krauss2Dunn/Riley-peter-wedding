@@ -1185,7 +1185,6 @@ html {
 }
 
 .faq-section {
-.faq-section {
   position: relative;
   overflow: hidden;
   background: #f8d2da;
@@ -1203,7 +1202,7 @@ html {
       rgba(248, 210, 218, 0) 16px,
       rgba(248, 210, 218, 0) 60px
     );
-  opacity: 0.16; /* slightly softer than registry */
+  opacity: 0.16;
   pointer-events: none;
   z-index: 0;
 }
@@ -1211,29 +1210,15 @@ html {
 .faq-inner {
   position: relative;
   z-index: 1;
-}
-
-.faq-title,
-.faq-section .section-label {
-  color: var(--cherry-cola);
+  max-width: 900px;
+  margin: 0 auto;
+  background: transparent;
 }
 
 .faq-item {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(124, 1, 22, 0.10);
   box-shadow: 0 8px 24px rgba(124, 1, 22, 0.06);
-}
-
-.faq-item summary {
-  color: var(--cherry-cola);
-}
-
-.faq-item summary::after {
-  color: var(--cherry-cola);
-}
-
-.faq-answer p {
-  color: #5b3940;
 }
 /* PATTERN OVERLAYS */
 
