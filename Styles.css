@@ -1044,14 +1044,35 @@ html {
 
 /* THINGS TO DO */
 .things-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--lemon-chiffon);
+}
+
+.things-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
     repeating-linear-gradient(
       90deg,
-      var(--wan-blue) 0px,
-      var(--wan-blue) 16px,
-      var(--lemon-chiffon) 16px,
-      var(--lemon-chiffon) 32px
+      rgba(13, 59, 102, 0.05) 0px,
+      rgba(13, 59, 102, 0.05) 18px,
+      rgba(250, 240, 202, 0) 18px,
+      rgba(250, 240, 202, 0) 64px
     );
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.things-inner {
+  position: relative;
+  z-index: 1;
+  background: rgba(250, 240, 202, 0.82);
+  padding: 56px 32px;
+  border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(13, 59, 102, 0.08);
 }
 
 .things-inner {
@@ -1111,14 +1132,35 @@ html {
 
 /* REGISTRY + FAQ */
 .registry-section {
+  position: relative;
+  overflow: hidden;
+  background: #f8d2da;
+}
+
+.registry-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
     repeating-linear-gradient(
       90deg,
-      var(--hibiscus-tonic) 0px,
-      var(--hibiscus-tonic) 18px,
-      #f8d2da 18px,
-      #f8d2da 36px
+      rgba(124, 1, 22, 0.05) 0px,
+      rgba(124, 1, 22, 0.05) 16px,
+      rgba(248, 210, 218, 0) 16px,
+      rgba(248, 210, 218, 0) 60px
     );
+  opacity: 0.20;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.registry-inner {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 48px 32px;
+  border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(124, 1, 22, 0.10);
 }
 
 .registry-inner {
