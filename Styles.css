@@ -1169,3 +1169,104 @@ html {
 .faq-answer p {
   color: #5b3940;
 }
+/* PATTERN OVERLAYS */
+
+/* Save the Weekend / Wedding Weekend */
+.announcement,
+.weekend-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.announcement::before,
+.weekend-preview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(239, 222, 249, 0.0) 0px,
+      rgba(239, 222, 249, 0.0) 22px,
+      rgba(77, 16, 72, 0.10) 22px,
+      rgba(77, 16, 72, 0.10) 24px,
+      rgba(239, 222, 249, 0.0) 24px,
+      rgba(239, 222, 249, 0.0) 56px,
+      rgba(255, 255, 255, 0.20) 56px,
+      rgba(255, 255, 255, 0.20) 58px,
+      rgba(239, 222, 249, 0.0) 58px,
+      rgba(239, 222, 249, 0.0) 92px
+    );
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.announcement > *,
+.weekend-preview > * {
+  position: relative;
+  z-index: 1;
+}
+/* Travel & Lodging */
+.travel-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.travel-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(162, 157, 31, 0.22) 0px,
+      rgba(162, 157, 31, 0.22) 28px,
+      rgba(203, 220, 223, 0.0) 28px,
+      rgba(203, 220, 223, 0.0) 72px
+    );
+  filter: blur(1px);
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.travel-inner {
+  position: relative;
+  z-index: 1;
+}
+/* RSVP */
+.rsvp-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.rsvp-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 254, 244, 0.22) 0px,
+      rgba(255, 254, 244, 0.22) 24px,
+      rgba(235, 105, 20, 0.0) 24px,
+      rgba(235, 105, 20, 0.0) 72px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 254, 244, 0.20) 0px,
+      rgba(255, 254, 244, 0.20) 24px,
+      rgba(235, 105, 20, 0.0) 24px,
+      rgba(235, 105, 20, 0.0) 72px
+    );
+  mix-blend-mode: soft-light;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rsvp-inner {
+  position: relative;
+  z-index: 1;
+}
