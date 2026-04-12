@@ -1185,8 +1185,32 @@ html {
 }
 
 .faq-section {
+.faq-section {
+  position: relative;
+  overflow: hidden;
+  background: #f8d2da;
+}
+
+.faq-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    linear-gradient(to bottom, var(--hibiscus-tonic), #f6d0d7);
+    repeating-linear-gradient(
+      90deg,
+      rgba(124, 1, 22, 0.05) 0px,
+      rgba(124, 1, 22, 0.05) 16px,
+      rgba(248, 210, 218, 0) 16px,
+      rgba(248, 210, 218, 0) 60px
+    );
+  opacity: 0.16; /* slightly softer than registry */
+  pointer-events: none;
+  z-index: 0;
+}
+
+.faq-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .faq-title,
