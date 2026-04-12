@@ -18,7 +18,25 @@
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --hibiscus-tonic: #E0A4B0;
+  --cherry-cola: #7C0116;
 
+  --wan-blue: #CBDCDF;
+  --pear-liqueur: #A29D1F;
+
+  --yale-blue: #0D3B66;
+  --lemon-chiffon: #FAF0CA;
+
+  --lilac: #EFDEF9;
+  --mulberry: #4D1048;
+
+  --tangerine: #EB6914;
+  --apricot-cream: #FFFEF4;
+
+  --soft-white: #fffdf8;
+  --deep-ink: #200142;
+}
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -939,4 +957,215 @@ html {
   .gate-subtitle {
     font-size: 16px;
   }
+}
+/* =========================
+   PALETTE OVERHAUL
+   ========================= */
+
+/* SAVE THE WEEKEND / WEDDING WEEKEND */
+.announcement,
+.weekend-preview {
+  background: var(--lilac);
+}
+
+.announcement-inner {
+  background: var(--mulberry);
+  color: white;
+  box-shadow: 0 18px 60px rgba(77, 16, 72, 0.18);
+}
+
+.announcement-kicker,
+.section-label {
+  color: inherit;
+}
+
+.announcement-copy {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.weekend-preview h3,
+.weekend-preview .section-label {
+  color: var(--mulberry);
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(77, 16, 72, 0.10);
+  box-shadow: 0 10px 30px rgba(77, 16, 72, 0.08);
+}
+
+.event-day,
+.event-card h4 {
+  color: var(--mulberry);
+}
+
+.event-card p {
+  color: #4a3e51;
+}
+
+/* TRAVEL & LODGING */
+.travel-section {
+  background:
+    linear-gradient(to bottom, rgba(203, 220, 223, 0.96), rgba(203, 220, 223, 0.96)),
+    var(--wan-blue);
+}
+
+.travel-title,
+.travel-section .section-label {
+  color: var(--pear-liqueur);
+}
+
+.travel-intro {
+  color: #445258;
+}
+
+.travel-notice {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(162, 157, 31, 0.20);
+}
+
+.travel-notice p {
+  color: #4b5559;
+}
+
+.travel-card {
+  background: rgba(162, 157, 31, 0.12);
+  border: 1px solid rgba(162, 157, 31, 0.22);
+  box-shadow: 0 8px 26px rgba(80, 85, 42, 0.08);
+}
+
+.travel-card h4 {
+  color: var(--pear-liqueur);
+}
+
+.travel-card p {
+  color: #485255;
+}
+
+/* THINGS TO DO */
+.things-section {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--wan-blue) 0px,
+      var(--wan-blue) 16px,
+      var(--lemon-chiffon) 16px,
+      var(--lemon-chiffon) 32px
+    );
+}
+
+.things-inner {
+  background: rgba(250, 240, 202, 0.88);
+  padding: 56px 32px;
+  border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(13, 59, 102, 0.08);
+}
+
+.things-title,
+.things-section .section-label {
+  color: var(--yale-blue);
+}
+
+.things-intro {
+  color: #31465f;
+}
+
+.things-card {
+  background: white;
+  border: 1px solid rgba(13, 59, 102, 0.10);
+  box-shadow: 0 8px 26px rgba(13, 59, 102, 0.06);
+}
+
+.things-tag,
+.things-card h4,
+.things-link {
+  color: var(--yale-blue);
+}
+
+.things-card p {
+  color: #465a71;
+}
+
+/* RSVP */
+.rsvp-section {
+  background: var(--tangerine);
+}
+
+.rsvp-title,
+.rsvp-text,
+.rsvp-note,
+.rsvp-section .section-label {
+  color: var(--apricot-cream);
+}
+
+.rsvp-button {
+  background: var(--apricot-cream);
+  color: var(--tangerine);
+  box-shadow: none;
+}
+
+.rsvp-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* REGISTRY + FAQ */
+.registry-section {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--hibiscus-tonic) 0px,
+      var(--hibiscus-tonic) 18px,
+      #f8d2da 18px,
+      #f8d2da 36px
+    );
+}
+
+.registry-inner {
+  background: rgba(255, 255, 255, 0.78);
+  padding: 48px 32px;
+  border-radius: 28px;
+  box-shadow: 0 14px 40px rgba(124, 1, 22, 0.10);
+}
+
+.registry-title,
+.registry-section .section-label {
+  color: var(--cherry-cola);
+}
+
+.registry-text {
+  color: #5b3940;
+}
+
+.registry-button {
+  background: var(--cherry-cola);
+  color: white;
+}
+
+.faq-section {
+  background:
+    linear-gradient(to bottom, var(--hibiscus-tonic), #f6d0d7);
+}
+
+.faq-title,
+.faq-section .section-label {
+  color: var(--cherry-cola);
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(124, 1, 22, 0.10);
+  box-shadow: 0 8px 24px rgba(124, 1, 22, 0.06);
+}
+
+.faq-item summary {
+  color: var(--cherry-cola);
+}
+
+.faq-item summary::after {
+  color: var(--cherry-cola);
+}
+
+.faq-answer p {
+  color: #5b3940;
 }
