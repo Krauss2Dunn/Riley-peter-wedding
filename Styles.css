@@ -709,7 +709,7 @@ html {
 }
 
 .faq-answer p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 14px;
 }
 .reveal {
   opacity: 0;
