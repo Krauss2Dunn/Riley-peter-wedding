@@ -641,10 +641,7 @@ html {
   color: #8c2e3e;
 }
 .faq-section {
-  padding: 120px 20px 0;
-  position: relative;
-  overflow: hidden;
-  background: #f8d2da;
+  padding: 120px 20px;
 }
 
 .faq-inner {
