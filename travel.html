@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    if (sessionStorage.getItem("weddingAccess") !== "granted") {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Lodging — Riley & Peter</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="site-nav scrolled">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="travel.html">Travel</a>
+        <a href="things.html">Things To Do</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="registry.html">Registry</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="travel-section page-section" id="travel">
+
+      <div class="travel-inner">
+
+        <p class="section-label">Travel & Lodging</p>
+
+        <h1 class="travel-title">
+          Getting to the Gorge.
+        </h1>
+
+        <p class="travel-intro">
+          Wind Mountain Ranch sits above the Columbia River Gorge in Stevenson, Washington — about an hour from Portland.
+          The area is known for waterfalls, vineyards, and sweeping views of the river valley.
+        </p>
+
+        <div class="travel-notice">
+          <p>
+            We recommend flying into Portland International Airport and renting a car. It is a stunning one-hour drive from Portland to the Hood River area.
+          </p>
+
+          <p>
+            Taxis and Ubers are not common in the Hood River area, so having a car will give you flexibility during the weekend.
+          </p>
+
+          <p>
+            We will have shuttles to and from the wedding location and hotels.
+          </p>
+        </div>
+
+        <div class="travel-grid">
+
+          <div class="travel-card">
+            <h4>Airport</h4>
+            <p>
+              The closest major airport is Portland International Airport, approximately one hour from Stevenson.
+            </p>
+          </div>
+
+          <div class="travel-card">
+            <h4>Stevenson</h4>
+            <p>
+              Stevenson sits on the Washington side of the Gorge and offers beautiful river views and quiet mountain surroundings.
+            </p>
+          </div>
+
+          <div class="travel-card">
+            <h4>Hood River</h4>
+            <p>
+              Just across the river, Hood River offers restaurants, breweries, and additional lodging options.
+            </p>
+          </div>
+
+          <div class="travel-card coming-soon">
+            <h4>Accommodations</h4>
+            <p>
+              Check back soon for information on local hotels and room blocks.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h4 class="footer-title">Riley & Peter</h4>
+      <p class="footer-date">May 29, 2027</p>
+      <p class="footer-location">Wind Mountain Ranch — Stevenson, Washington</p>
+      <p class="footer-note">We can't wait to celebrate with you.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
