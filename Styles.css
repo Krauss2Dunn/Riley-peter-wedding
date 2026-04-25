@@ -790,19 +790,19 @@ html {
 .footer-title {
   font-family: 'Fraunces', serif;
   font-size: 36px;
-  color: #fff1b5;
+  color: #fffdf8;
   margin-bottom: 10px;
 }
 
 .footer-date {
   font-size: 16px;
-  color: #c1dbe8;
+  color: #fffdf8;
   margin-bottom: 6px;
 }
 
 .footer-location {
   font-size: 16px;
-  color: #c1dbe8;
+  color: #fffdf8
   margin-bottom: 18px;
 }
 
@@ -810,7 +810,7 @@ html {
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #fff1b5;
+  color: #fffdf8;
 }
 .gate-page {
   margin: 0;
