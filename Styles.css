@@ -1357,3 +1357,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+.faq-section.page-section {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
