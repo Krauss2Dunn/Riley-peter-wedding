@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    if (sessionStorage.getItem("weddingAccess") !== "granted") {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP — Riley & Peter</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="site-nav scrolled">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="travel.html">Travel</a>
+        <a href="things.html">Things To Do</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="registry.html">Registry</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="rsvp-section page-section" id="rsvp">
+
+      <div class="rsvp-inner">
+
+        <p class="section-label">RSVP</p>
+
+        <h1 class="rsvp-title">
+          Let us know you’re coming.
+        </h1>
+
+        <p class="rsvp-text">
+          Please use the link below to RSVP and share your details with us.
+        </p>
+
+        <a href="https://www.zola.com/wedding/windmountain/rsvp" target="_blank" class="rsvp-button">
+          RSVP Here
+        </a>
+
+        <p class="rsvp-note">
+          We can’t wait to celebrate with you.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h4 class="footer-title">Riley & Peter</h4>
+      <p class="footer-date">May 29, 2027</p>
+      <p class="footer-location">Wind Mountain Ranch — Stevenson, Washington</p>
+      <p class="footer-note">We can't wait to celebrate with you.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
