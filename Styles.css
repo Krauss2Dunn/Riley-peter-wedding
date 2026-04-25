@@ -1344,3 +1344,9 @@ html {
 .page-section {
   padding-top: 140px;
 }
+.rsvp-section.page-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
