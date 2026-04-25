@@ -361,7 +361,7 @@ html {
 
 .travel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
 
@@ -372,7 +372,19 @@ html {
   border: 1px solid rgba(32,1,66,0.08);
   box-shadow: 0 8px 26px rgba(32,1,66,0.06);
 }
+.travel-card.coming-soon {
+  background: rgba(255, 255, 255, 0.5);
+  border-style: dashed;
+  border-color: rgba(162, 157, 31, 0.35);
+}
 
+.travel-card.coming-soon h4 {
+  opacity: 0.8;
+}
+
+.travel-card.coming-soon p {
+  opacity: 0.75;
+}
 .travel-card h4 {
   font-family: 'Fraunces', serif;
   color: #200142;
