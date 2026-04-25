@@ -37,23 +37,29 @@
     </div>
   </section>
 
-  <script>
-    const form = document.getElementById("password-form");
-    const input = document.getElementById("site-password");
-    const error = document.getElementById("password-error");
+ <script>
+  const form = document.getElementById("password-form");
+  const input = document.getElementById("site-password");
+  const error = document.getElementById("password-error");
 
-    const SITE_PASSWORD = "mulligan";
+  const SITE_PASSWORD = "mulligan";
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      if (input.value === SITE_PASSWORD) {
-        sessionStorage.setItem("weddingAccess", "granted");
-        window.location.href = "home.html";
-      } else {
-        error.textContent = "Incorrect password. Please try again.";
-      }
-    });
-  </script>
+    const entered = input.value.trim().toLowerCase();
+
+    if (entered === SITE_PASSWORD.toLowerCase()) {
+      sessionStorage.setItem("weddingAccess", "granted");
+      window.location.href = "home.html";
+    } else {
+      error.textContent = "Incorrect password. Please try again.";
+    }
+  });
+
+  input.addEventListener("input", () => {
+    error.textContent = "";
+  });
+</script>
 </body>
 </html>
