@@ -788,30 +788,21 @@ html {
 }
 
 .footer-title {
-  font-family: 'Fraunces', serif;
-  font-size: 36px;
-  color: #fffdf8;
+  font-family: "Roseritta", serif;
+  font-size: 42px;
+  color: #fff1b5;
   margin-bottom: 10px;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .footer-date {
+  font-family: "Loveletter No 9", serif;
   font-size: 16px;
   color: #fffdf8;
   margin-bottom: 6px;
 }
 
-.footer-location {
-  font-size: 16px;
-  color: #fffdf8
-  margin-bottom: 18px;
-}
-
-.footer-note {
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #fffdf8;
-}
 .gate-page {
   margin: 0;
   background: #200142;
