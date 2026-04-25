@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    if (sessionStorage.getItem("weddingAccess") !== "granted") {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Riley & Peter</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="site-nav scrolled">
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="travel.html">Travel</a>
+        <a href="things.html">Things To Do</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="registry.html">Registry</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-main">
+
+    <section class="faq-section page-section" id="faq">
+
+      <div class="faq-inner">
+
+        <p class="section-label">FAQ</p>
+
+        <h1 class="faq-title">
+          A few things to know.
+        </h1>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>What should I wear?</summary>
+            <div class="faq-answer">
+              <p><strong>Welcome Party:</strong> Elevated Casual — look good and bring a second layer if it gets chilly in the evening.</p>
+              <p><strong>Wedding:</strong> Colorful Formal — long dresses, suit and tie.</p>
+              <p><strong>Sunday Sendoff:</strong> Hangover Chic — whatever you’re capable of wearing.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What about transportation?</summary>
+            <div class="faq-answer">
+              <p>Please see the Travel page for the basics. We strongly encourage guests to rent a car in Portland.</p>
+              <p>Taxis and ride-shares are not available in the wedding area.</p>
+              <p>Please do not drive to the venue. Shuttles will run from the main hotels to the venue, so if you’re staying elsewhere, drive to one of the hotels and hop on the shuttle.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What will the weather be like?</summary>
+            <div class="faq-answer">
+              <p>Please pray to your deity of choice for sun.</p>
+              <p>Late May tends to be mild, with daytime highs around 70 and nighttime lows around 50.</p>
+              <p>It’s the Pacific Northwest, so rain is always possible.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are children invited?</summary>
+            <div class="faq-answer">
+              <p>No.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What kind of shoes should I wear?</summary>
+            <div class="faq-answer">
+              <p>The welcome party and ceremony will likely take place in a grassy field, so please choose shoes that can handle uneven outdoor terrain.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What if I have another question?</summary>
+            <div class="faq-answer">
+              <p>Just ask us.</p>
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h4 class="footer-title">Riley & Peter</h4>
+      <p class="footer-date">May 29, 2027</p>
+      <p class="footer-location">Wind Mountain Ranch — Stevenson, Washington</p>
+      <p class="footer-note">We can't wait to celebrate with you.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
