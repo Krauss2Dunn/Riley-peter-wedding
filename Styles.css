@@ -325,12 +325,34 @@ html {
 }
 
 @media (max-width: 900px) {
-  .nav-links {
-    display: none;
+  .site-nav {
+    padding: 12px 10px;
   }
 
   .nav-inner {
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 14px;
+    padding: 10px 14px;
+    width: 100%;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    font-size: 10px;
+    letter-spacing: 0.12em;
   }
 }
 
