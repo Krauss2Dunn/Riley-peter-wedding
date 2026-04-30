@@ -808,7 +808,7 @@ html {
   inset: 0;
   display: flex;
   width: max-content;
-  animation: footerScroll 38s linear infinite;
+  animation: footerScroll 60s linear infinite;
 }
 
 .footer-carousel img {
@@ -849,8 +849,9 @@ html {
 
 .footer-date,
 .footer-location {
+  font-family: "Loveletter No 9", serif;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
+  color: white;
   margin: 0 0 4px;
 }
 
