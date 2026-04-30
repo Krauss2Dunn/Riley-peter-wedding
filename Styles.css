@@ -951,7 +951,7 @@ html {
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #fff1b5;
+  color: white;
 }
 
 .gate-content h1 {
@@ -972,7 +972,7 @@ html {
   margin: 0;
   display: inline-block;
   transform: translateY(-0.06em);
-  color: #fff1b5;
+  color: white;
 }
 
 
