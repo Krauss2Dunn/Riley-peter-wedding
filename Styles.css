@@ -31,8 +31,12 @@
   --shadow-soft: rgba(42, 36, 51, 0.06);
   --border-soft: rgba(42, 36, 51, 0.08);
 }
+html,
 body {
   margin: 0;
+  padding: 0;
+  background: var(--butter-ivory);
+  color: var(--text-dark);
   font-family: 'Inter', sans-serif;
 }
 
