@@ -19,23 +19,17 @@
   font-style: normal;
 }
 :root {
-  --hibiscus-tonic: #E0A4B0;
-  --cherry-cola: #7C0116;
+  --deep-red: #750107;
+  --blush-pink: #f6e7eb;
+  --silver-blue: #e3f2fc;
+  --butter-ivory: #f8f5ee;
+  --pale-green: #98a35d;
 
-  --wan-blue: #CBDCDF;
-  --pear-liqueur: #A29D1F;
+  --text-dark: #2a2433;
+  --text-soft: #5f5968;
 
-  --yale-blue: #0D3B66;
-  --lemon-chiffon: #FAF0CA;
-
-  --lilac: #EFDEF9;
-  --mulberry: #4D1048;
-
-  --tangerine: #EB6914;
-  --apricot-cream: #FFFEF4;
-
-  --soft-white: #fffdf8;
-  --deep-ink: #200142;
+  --shadow-soft: rgba(42, 36, 51, 0.06);
+  --border-soft: rgba(42, 36, 51, 0.08);
 }
 body {
   margin: 0;
