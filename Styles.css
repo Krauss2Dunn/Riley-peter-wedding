@@ -1156,45 +1156,59 @@ html {
   color: #4a3e51;
 }
 
-/* TRAVEL & LODGING */
+/* ================================
+   TRAVEL & LODGING — NEW PALETTE OVERRIDE
+================================ */
+
 .travel-section {
   background:
-    linear-gradient(to bottom, rgba(203, 220, 223, 0.96), rgba(203, 220, 223, 0.96)),
-    var(--wan-blue);
+    linear-gradient(
+      to bottom,
+      rgba(227, 242, 252, 0.58),
+      rgba(250, 246, 238, 0) 34%
+    ),
+    var(--butter-ivory);
+  color: var(--text-dark);
 }
 
 .travel-title,
 .travel-section .section-label {
-  color: var(--pear-liqueur);
+  color: var(--deep-red);
 }
 
 .travel-intro {
-  color: #445258;
+  color: var(--text-soft);
 }
 
 .travel-notice {
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(162, 157, 31, 0.20);
+  background: rgba(248, 225, 231, 0.55);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 10px 30px rgba(54, 24, 24, 0.06);
 }
 
 .travel-notice p {
-  color: #4b5559;
+  color: var(--text-dark);
 }
 
 .travel-card {
-  background: rgba(162, 157, 31, 0.12);
-  border: 1px solid rgba(162, 157, 31, 0.22);
-  box-shadow: 0 8px 26px rgba(80, 85, 42, 0.08);
+  background: rgba(255, 250, 243, 0.94);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 8px 26px rgba(54, 24, 24, 0.07);
 }
 
 .travel-card h4 {
-  color: var(--pear-liqueur);
+  color: var(--deep-red);
 }
 
 .travel-card p {
-  color: #485255;
+  color: var(--text-soft);
 }
 
+.travel-card.coming-soon {
+  background: rgba(227, 242, 252, 0.42);
+  border-style: dashed;
+  border-color: rgba(117, 1, 7, 0.24);
+}
 /* THINGS TO DO */
 .things-section {
   position: relative;
@@ -1424,13 +1438,13 @@ html {
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(162, 157, 31, 0.22) 0px,
-      rgba(162, 157, 31, 0.22) 28px,
-      rgba(203, 220, 223, 0.0) 28px,
-      rgba(203, 220, 223, 0.0) 72px
+      rgba(117, 1, 7, 0.08) 0px,
+      rgba(117, 1, 7, 0.08) 24px,
+      rgba(227, 242, 252, 0) 24px,
+      rgba(227, 242, 252, 0) 72px
     );
   filter: blur(1px);
-  opacity: 0.16;
+  opacity: 0.14;
   pointer-events: none;
   z-index: 0;
 }
