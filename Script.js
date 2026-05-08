@@ -1,11 +1,10 @@
-const nav = document.querySelector(".site-nav");
-const revealElements = document.querySelectorAll(".reveal, .reveal-card");
+const nav = document.querySelector('.site-nav');
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   if (window.scrollY > 40) {
-    nav.classList.add("scrolled");
+    nav.classList.add('scrolled');
   } else {
-    nav.classList.remove("scrolled");
+    nav.classList.remove('scrolled');
   }
 });
 
