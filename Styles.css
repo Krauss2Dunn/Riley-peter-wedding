@@ -1457,3 +1457,54 @@ html {
   padding-top: 140px;
   padding-bottom: 120px;
 }
+
+/* ================================
+   HOME PAGE FINAL COLOR PASS
+   Keep near bottom of stylesheet
+================================ */
+
+/* Announcement card */
+.announcement .announcement-inner {
+  color: var(--text-dark);
+}
+
+.announcement .announcement-kicker {
+  color: var(--deep-red);
+  opacity: 0.72;
+}
+
+.announcement .announcement-inner h2 {
+  color: var(--deep-red);
+}
+
+.announcement .announcement-copy {
+  color: var(--text-dark);
+  opacity: 0.82;
+}
+
+/* Weekend preview */
+.weekend-preview {
+  color: var(--text-dark);
+}
+
+.weekend-preview .section-label {
+  color: var(--deep-red);
+  opacity: 0.82;
+}
+
+.weekend-preview h3 {
+  color: var(--deep-red);
+}
+
+.weekend-preview .event-day {
+  color: var(--deep-red);
+  opacity: 0.82;
+}
+
+.weekend-preview .event-card h4 {
+  color: var(--deep-red);
+}
+
+.weekend-preview .event-card p {
+  color: var(--text-soft);
+}
