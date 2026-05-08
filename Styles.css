@@ -754,31 +754,39 @@ html {
 .faq-answer p:last-child {
   margin-bottom: 14px;
 }
-.reveal {
-  opacity: 0;
-  transform: translateY(48px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-  will-change: opacity, transform;
-}
+/* ================================
+   SCROLL REVEALS
+================================ */
 
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+.reveal,
 .reveal-card {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+  transform: translateY(36px);
+  transition:
+    opacity 0.85s ease,
+    transform 0.85s ease,
+    visibility 0s linear 0.85s;
   will-change: opacity, transform;
 }
 
+.reveal.visible,
 .reveal-card.visible {
   opacity: 1;
+  visibility: visible;
   transform: translateY(0);
+  transition:
+    opacity 0.85s ease,
+    transform 0.85s ease,
+    visibility 0s linear 0s;
 }
 
-/* subtle stagger timing */
+/* Slightly smaller movement for individual cards */
+.reveal-card {
+  transform: translateY(28px);
+}
+
+/* Subtle stagger timing */
 .reveal-card:nth-child(1) {
   transition-delay: 0.05s;
 }
@@ -801,6 +809,17 @@ html {
 
 .reveal-card:nth-child(6) {
   transition-delay: 0.4s;
+}
+
+/* Safety: if motion is disabled, show content immediately */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-card {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
 }
 .site-footer.photo-footer {
   position: relative;
