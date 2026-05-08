@@ -20,16 +20,20 @@
 }
 :root {
   --deep-red: #750107;
-  --blush-pink: #f6e7eb;
-  --silver-blue: #e3f2fc;
-  --butter-ivory: #f8f5ee;
-  --pale-green: #98a35d;
+  --plush-pink: #f8e1e7;
+  --silvery-blue: #e3f2fc;
+  --butter-ivory: #faf6ee;
+  --pale-green: #b9b89a;
 
-  --text-dark: #2a2433;
-  --text-soft: #5f5968;
+  --text-dark: #2a1b18;
+  --text-soft: #6f5a55;
+  --text-light: #fffaf3;
 
-  --shadow-soft: rgba(42, 36, 51, 0.06);
-  --border-soft: rgba(42, 36, 51, 0.08);
+  --border-soft: rgba(117, 1, 7, 0.16);
+  --shadow-soft: rgba(54, 24, 24, 0.16);
+
+  --font-display: "Roseritta", serif;
+  --font-body: "Inter", sans-serif;
 }
 html,
 body {
