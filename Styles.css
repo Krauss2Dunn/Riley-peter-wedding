@@ -1445,3 +1445,45 @@ html {
   padding-top: 140px;
   padding-bottom: 120px;
 }
+
+/* ================================
+   TEMPORARY VISIBILITY DIAGNOSTIC
+   Remove after fixing
+================================ */
+
+.announcement,
+.announcement-inner,
+.weekend-preview,
+.weekend-preview-inner,
+.event-grid,
+.event-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.announcement *,
+.weekend-preview * {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  color: #750107 !important;
+}
+
+.event-card p {
+  color: #2a1b18 !important;
+}
+
+.event-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.announcement {
+  min-height: 200px;
+}
+
+.weekend-preview {
+  min-height: 300px;
+}
