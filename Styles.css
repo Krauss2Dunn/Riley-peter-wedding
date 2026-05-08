@@ -115,6 +115,10 @@ body {
   transform: translateY(-0.08em);
   color: inherit;
 }
+/* ================================
+   HERO TEXT
+================================ */
+
 .hero-text p {
   font-family: "Loveletter No 9", serif;
   font-size: 30px;
@@ -124,34 +128,43 @@ body {
   text-transform: none;
 }
 
+/* ================================
+   HOME ANNOUNCEMENT
+================================ */
+
 .announcement {
   position: relative;
-  margin-top: -40px;
-  z-index: 3;
+  z-index: 5;
+  margin-top: -32px;
   padding: 0 20px 80px;
+  background: var(--butter-ivory);
 }
 
 .announcement-inner {
   max-width: 980px;
   margin: 0 auto;
-  background: rgba(255, 241, 181, 0.92);
-  color: #200142;
+  background: rgba(248, 225, 231, 0.88);
+  color: var(--text-dark);
+  border: 1px solid var(--border-soft);
   border-radius: 28px;
   padding: 48px 32px;
   text-align: center;
-  box-shadow: 0 18px 60px rgba(32, 1, 66, 0.16);
+  box-shadow: 0 18px 60px var(--shadow-soft);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .announcement-kicker {
   margin: 0 0 12px;
+  color: var(--deep-red);
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .announcement-inner h2 {
-  font-family: 'Roseritta', serif;
+  font-family: "Roseritta", serif;
+  color: var(--deep-red);
   font-size: clamp(34px, 5vw, 64px);
   line-height: 1;
   margin: 0 0 16px;
@@ -160,15 +173,23 @@ body {
 .announcement-copy {
   max-width: 680px;
   margin: 0 auto;
+  color: var(--text-dark);
   font-size: 18px;
   line-height: 1.6;
 }
 
+/* ================================
+   WEEKEND PREVIEW
+================================ */
+
 .weekend-preview {
+  position: relative;
+  z-index: 2;
   padding: 40px 20px 100px;
   background:
-    linear-gradient(to bottom, rgba(193, 219, 232, 0.18), transparent 30%),
-    #ffffff;
+    linear-gradient(to bottom, rgba(227, 242, 252, 0.55), rgba(250, 246, 238, 0) 34%),
+    var(--butter-ivory);
+  color: var(--text-dark);
 }
 
 .weekend-preview-inner {
@@ -178,7 +199,7 @@ body {
 
 .section-label {
   margin: 0 0 14px;
-  color: #8c2e3e;
+  color: var(--deep-red);
   font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -187,8 +208,8 @@ body {
 .weekend-preview h3 {
   max-width: 720px;
   margin: 0 0 36px;
-  font-family: 'Roseritta', serif;
-  color: #200142;
+  font-family: "Roseritta", serif;
+  color: var(--deep-red);
   font-size: clamp(30px, 4.8vw, 54px);
   line-height: 1.05;
 }
@@ -200,17 +221,17 @@ body {
 }
 
 .event-card {
-  background: #fffdf6;
-  border: 1px solid rgba(32, 1, 66, 0.08);
+  background: rgba(255, 250, 243, 0.92);
+  border: 1px solid var(--border-soft);
   border-radius: 22px;
   padding: 28px 24px;
-  box-shadow: 0 10px 30px rgba(32, 1, 66, 0.06);
+  box-shadow: 0 10px 30px rgba(54, 24, 24, 0.08);
 }
 
 .event-day {
   display: inline-block;
   margin-bottom: 12px;
-  color: #867b18;
+  color: var(--pale-green);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -219,21 +240,30 @@ body {
 
 .event-card h4 {
   margin: 0 0 12px;
-  font-family: 'Roseritta', serif;
-  color: #200142;
+  font-family: "Roseritta", serif;
+  color: var(--deep-red);
   font-size: 28px;
   line-height: 1.05;
 }
 
 .event-card p {
   margin: 0;
-  color: #3e3550;
+  color: var(--text-dark);
   line-height: 1.6;
 }
+
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 900px) {
   .event-grid {
     grid-template-columns: 1fr;
+  }
+
+  .announcement {
+    margin-top: -20px;
+    padding: 0 16px 64px;
   }
 
   .announcement-inner {
