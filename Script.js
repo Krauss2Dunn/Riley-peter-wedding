@@ -1,12 +1,20 @@
-const nav = document.querySelector('.site-nav');
+const nav = document.querySelector(".site-nav");
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-});
+if (nav) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+}
+
+/* ================================
+   SCROLL REVEAL
+================================ */
+
+const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
   (entries) => {
