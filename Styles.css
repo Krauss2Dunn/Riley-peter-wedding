@@ -761,24 +761,17 @@ html {
 .reveal,
 .reveal-card {
   opacity: 0;
-  visibility: hidden;
   transform: translateY(36px);
   transition:
     opacity 0.85s ease,
-    transform 0.85s ease,
-    visibility 0s linear 0.85s;
+    transform 0.85s ease;
   will-change: opacity, transform;
 }
 
 .reveal.visible,
 .reveal-card.visible {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0);
-  transition:
-    opacity 0.85s ease,
-    transform 0.85s ease,
-    visibility 0s linear 0s;
 }
 
 /* Slightly smaller movement for individual cards */
@@ -816,11 +809,11 @@ html {
   .reveal,
   .reveal-card {
     opacity: 1;
-    visibility: visible;
     transform: none;
     transition: none;
   }
 }
+
 .site-footer.photo-footer {
   position: relative;
   width: 100%;
