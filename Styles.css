@@ -516,9 +516,14 @@ html {
     transform: translate3d(-1%, 2%, 0) scale(1.02);
   }
 }
+/* ================================
+   THINGS TO DO — STRUCTURE
+================================ */
+
 .things-section {
   padding: 100px 20px;
-  background: #ffffff;
+  background: var(--butter-ivory);
+  color: var(--text-dark);
 }
 
 .things-inner {
@@ -527,9 +532,9 @@ html {
 }
 
 .things-title {
-  font-family: 'Roseritta', serif;
+  font-family: "Roseritta", serif;
   font-size: clamp(34px, 5vw, 56px);
-  color: #200142;
+  color: var(--deep-red);
   margin: 0 0 20px;
 }
 
@@ -538,7 +543,7 @@ html {
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 50px;
-  color: #3f3a48;
+  color: var(--text-soft);
 }
 
 .things-grid {
@@ -548,17 +553,17 @@ html {
 }
 
 .things-card {
-  background: #fdfbf5;
-  border: 1px solid rgba(32, 1, 66, 0.08);
+  background: rgba(255, 250, 243, 0.94);
+  border: 1px solid var(--border-soft);
   border-radius: 22px;
   padding: 28px;
-  box-shadow: 0 8px 26px rgba(32, 1, 66, 0.05);
+  box-shadow: 0 8px 26px rgba(54, 24, 24, 0.07);
 }
 
 .things-tag {
   display: inline-block;
   margin-bottom: 12px;
-  color: #8c2e3e;
+  color: var(--deep-red);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -567,15 +572,15 @@ html {
 
 .things-card h4 {
   margin: 0 0 12px;
-  font-family: 'Roseritta', serif;
-  color: #200142;
+  font-family: "Roseritta", serif;
+  color: var(--deep-red);
   font-size: 28px;
   line-height: 1.05;
 }
 
 .things-card p {
   margin: 0;
-  color: #4b4658;
+  color: var(--text-soft);
   line-height: 1.6;
 }
 
@@ -583,7 +588,7 @@ html {
   display: inline-block;
   margin-top: 12px;
   font-size: 14px;
-  color: #8c2e3e;
+  color: var(--deep-red);
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -594,6 +599,10 @@ html {
 }
 
 @media (max-width: 900px) {
+  .things-section {
+    padding: 80px 18px;
+  }
+
   .things-grid {
     grid-template-columns: 1fr;
   }
@@ -1209,11 +1218,20 @@ html {
   border-style: dashed;
   border-color: rgba(117, 1, 7, 0.24);
 }
-/* THINGS TO DO */
+/* ================================
+   THINGS TO DO — NEW PALETTE OVERRIDE
+================================ */
+
 .things-section {
   position: relative;
   overflow: hidden;
-  background: var(--lemon-chiffon);
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(185, 184, 154, 0.28),
+      rgba(250, 246, 238, 0) 38%
+    ),
+    var(--butter-ivory);
 }
 
 .things-section::before {
@@ -1223,10 +1241,10 @@ html {
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(13, 59, 102, 0.05) 0px,
-      rgba(13, 59, 102, 0.05) 18px,
-      rgba(250, 240, 202, 0) 18px,
-      rgba(250, 240, 202, 0) 64px
+      rgba(117, 1, 7, 0.055) 0px,
+      rgba(117, 1, 7, 0.055) 18px,
+      rgba(250, 246, 238, 0) 18px,
+      rgba(250, 246, 238, 0) 64px
     );
   opacity: 0.22;
   pointer-events: none;
@@ -1236,42 +1254,36 @@ html {
 .things-inner {
   position: relative;
   z-index: 1;
-  background: rgba(250, 240, 202, 0.82);
+  background: rgba(255, 250, 243, 0.82);
   padding: 56px 32px;
   border-radius: 28px;
-  box-shadow: 0 14px 40px rgba(13, 59, 102, 0.08);
-}
-
-.things-inner {
-  background: rgba(250, 240, 202, 0.88);
-  padding: 56px 32px;
-  border-radius: 28px;
-  box-shadow: 0 14px 40px rgba(13, 59, 102, 0.08);
+  box-shadow: 0 14px 40px rgba(54, 24, 24, 0.08);
+  border: 1px solid var(--border-soft);
 }
 
 .things-title,
 .things-section .section-label {
-  color: var(--yale-blue);
+  color: var(--deep-red);
 }
 
 .things-intro {
-  color: #31465f;
+  color: var(--text-soft);
 }
 
 .things-card {
-  background: white;
-  border: 1px solid rgba(13, 59, 102, 0.10);
-  box-shadow: 0 8px 26px rgba(13, 59, 102, 0.06);
+  background: rgba(255, 250, 243, 0.94);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 8px 26px rgba(54, 24, 24, 0.07);
 }
 
 .things-tag,
 .things-card h4,
 .things-link {
-  color: var(--yale-blue);
+  color: var(--deep-red);
 }
 
 .things-card p {
-  color: #465a71;
+  color: var(--text-soft);
 }
 
 /* RSVP */
