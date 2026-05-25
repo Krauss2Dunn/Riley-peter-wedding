@@ -654,12 +654,21 @@ html {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.12);
 }
+/* ================================
+   RSVP — STRUCTURE
+================================ */
+
 .rsvp-section {
   padding: 120px 20px;
   background:
-    linear-gradient(to bottom, rgba(193, 219, 232, 0.22), rgba(255, 255, 255, 0.96)),
-    #ffffff;
+    linear-gradient(
+      to bottom,
+      rgba(248, 225, 231, 0.62),
+      rgba(250, 246, 238, 0.96)
+    ),
+    var(--butter-ivory);
   text-align: center;
+  color: var(--text-dark);
 }
 
 .rsvp-inner {
@@ -668,17 +677,17 @@ html {
 }
 
 .rsvp-title {
-  font-family: 'Roseritta', serif;
+  font-family: "Roseritta", serif;
   font-size: clamp(36px, 5vw, 60px);
-  color: #200142;
-  margin-bottom: 20px;
+  color: var(--deep-red);
+  margin: 0 0 20px;
 }
 
 .rsvp-text {
   font-size: 18px;
   line-height: 1.7;
-  color: #4b4658;
-  margin-bottom: 36px;
+  color: var(--text-soft);
+  margin: 0 0 36px;
 }
 
 .rsvp-button-wrap {
@@ -690,26 +699,29 @@ html {
 .rsvp-button {
   display: inline-block;
   padding: 16px 34px;
-  background: #200142;
-  color: white;
+  background: var(--deep-red);
+  color: var(--text-light);
   text-decoration: none;
   border-radius: 999px;
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 10px 24px rgba(54, 24, 24, 0.14);
 }
 
 .rsvp-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(32, 1, 66, 0.16);
+  background: #8a1117;
+  box-shadow: 0 12px 28px rgba(54, 24, 24, 0.2);
 }
 
 .rsvp-note {
   font-size: 13px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #8c2e3e;
+  color: var(--deep-red);
+  opacity: 0.76;
 }
 .faq-section {
   padding: 120px 20px;
@@ -1286,27 +1298,49 @@ html {
   color: var(--text-soft);
 }
 
-/* RSVP */
+/* ================================
+   RSVP — NEW PALETTE OVERRIDE
+================================ */
+
 .rsvp-section {
-  background: var(--tangerine);
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(227, 242, 252, 0.62),
+      rgba(227, 242, 252, 0) 34%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(248, 225, 231, 0.7),
+      rgba(250, 246, 238, 0.98)
+    ),
+    var(--butter-ivory);
 }
 
 .rsvp-title,
-.rsvp-text,
-.rsvp-note,
 .rsvp-section .section-label {
-  color: var(--apricot-cream);
+  color: var(--deep-red);
+}
+
+.rsvp-text {
+  color: var(--text-soft);
+}
+
+.rsvp-note {
+  color: var(--deep-red);
+  opacity: 0.76;
 }
 
 .rsvp-button {
-  background: var(--apricot-cream);
-  color: var(--tangerine);
-  box-shadow: none;
+  background: var(--deep-red);
+  color: var(--text-light);
+  box-shadow: 0 10px 24px rgba(54, 24, 24, 0.14);
 }
 
 .rsvp-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  background: #8a1117;
+  box-shadow: 0 12px 28px rgba(54, 24, 24, 0.2);
 }
 
 /* REGISTRY + FAQ */
@@ -1465,7 +1499,10 @@ html {
   position: relative;
   z-index: 1;
 }
-/* RSVP */
+/* ================================
+   RSVP — TEXTURE / PAGE LAYOUT
+================================ */
+
 .rsvp-section {
   position: relative;
   overflow: hidden;
@@ -1478,20 +1515,19 @@ html {
   background:
     repeating-linear-gradient(
       0deg,
-      rgba(255, 254, 244, 0.22) 0px,
-      rgba(255, 254, 244, 0.22) 24px,
-      rgba(235, 105, 20, 0.0) 24px,
-      rgba(235, 105, 20, 0.0) 72px
+      rgba(117, 1, 7, 0.055) 0px,
+      rgba(117, 1, 7, 0.055) 22px,
+      rgba(250, 246, 238, 0) 22px,
+      rgba(250, 246, 238, 0) 72px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 254, 244, 0.20) 0px,
-      rgba(255, 254, 244, 0.20) 24px,
-      rgba(235, 105, 20, 0.0) 24px,
-      rgba(235, 105, 20, 0.0) 72px
+      rgba(117, 1, 7, 0.04) 0px,
+      rgba(117, 1, 7, 0.04) 22px,
+      rgba(250, 246, 238, 0) 22px,
+      rgba(250, 246, 238, 0) 72px
     );
-  mix-blend-mode: soft-light;
-  opacity: 0.45;
+  opacity: 0.16;
   pointer-events: none;
   z-index: 0;
 }
@@ -1500,6 +1536,7 @@ html {
   position: relative;
   z-index: 1;
 }
+
 .page-main {
   min-height: 100vh;
 }
