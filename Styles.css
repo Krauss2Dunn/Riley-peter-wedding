@@ -180,7 +180,21 @@ a {
   position: relative;
   z-index: 1;
 }
-
+/* Keep Master Pattern visible in any page-main space before footer */
+.page-main {
+  min-height: 100vh;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(250, 246, 238, 0.96) 0px,
+      rgba(250, 246, 238, 0.96) 84px,
+      rgba(216, 232, 241, 0.72) 84px,
+      rgba(216, 232, 241, 0.72) 132px,
+      rgba(250, 246, 238, 0.96) 132px,
+      rgba(250, 246, 238, 0.96) 220px
+    ),
+    var(--butter-ivory);
+}
 /* =========================================================
    5. Navigation
    ========================================================= */
