@@ -129,7 +129,8 @@ a {
    4. Shared Master Pattern
    ---------------------------------------------------------
    Applied to home content after hero and all interior pages.
-   Uses desaturated Silvery Blue + Butter Ivory.
+   Uses broad, soft vertical bands of desaturated
+   Silvery Blue + Butter Ivory.
    ========================================================= */
 
 .announcement,
@@ -159,18 +160,14 @@ a {
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(250, 246, 238, 0) 0px,
-      rgba(250, 246, 238, 0) 32px,
-      rgba(174, 196, 207, 0.16) 32px,
-      rgba(174, 196, 207, 0.16) 34px,
-      rgba(250, 246, 238, 0) 34px,
-      rgba(250, 246, 238, 0) 74px,
-      rgba(255, 250, 243, 0.62) 74px,
-      rgba(255, 250, 243, 0.62) 76px,
-      rgba(250, 246, 238, 0) 76px,
-      rgba(250, 246, 238, 0) 112px
+      rgba(250, 246, 238, 0.96) 0px,
+      rgba(250, 246, 238, 0.96) 84px,
+      rgba(216, 232, 241, 0.72) 84px,
+      rgba(216, 232, 241, 0.72) 132px,
+      rgba(250, 246, 238, 0.96) 132px,
+      rgba(250, 246, 238, 0.96) 220px
     );
-  opacity: 0.78;
+  opacity: 0.82;
 }
 
 .announcement > *,
@@ -183,7 +180,6 @@ a {
   position: relative;
   z-index: 1;
 }
-
 
 /* =========================================================
    5. Navigation
