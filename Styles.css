@@ -607,10 +607,21 @@ html {
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   REGISTRY — STRUCTURE
+================================ */
+
 .registry-section {
   padding: 120px 20px;
-  background: #fffdf6;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(248, 225, 231, 0.62),
+      rgba(250, 246, 238, 0.98)
+    ),
+    var(--butter-ivory);
   text-align: center;
+  color: var(--text-dark);
 }
 
 .registry-inner {
@@ -619,17 +630,17 @@ html {
 }
 
 .registry-title {
-  font-family: 'Roseritta', serif;
+  font-family: "Roseritta", serif;
   font-size: clamp(36px, 5vw, 60px);
-  color: #200142;
-  margin-bottom: 20px;
+  color: var(--deep-red);
+  margin: 0 0 20px;
 }
 
 .registry-text {
   font-size: 18px;
   line-height: 1.7;
-  color: #4b4658;
-  margin-bottom: 40px;
+  color: var(--text-soft);
+  margin: 0 0 40px;
 }
 
 .registry-button-wrap {
@@ -640,19 +651,21 @@ html {
 .registry-button {
   display: inline-block;
   padding: 16px 34px;
-  background: #8c2e3e;
-  color: white;
+  background: var(--deep-red);
+  color: var(--text-light);
   text-decoration: none;
   border-radius: 999px;
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 10px 24px rgba(54, 24, 24, 0.14);
 }
 
 .registry-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background: #8a1117;
+  box-shadow: 0 12px 28px rgba(54, 24, 24, 0.2);
 }
 /* ================================
    RSVP — STRUCTURE
@@ -1343,11 +1356,25 @@ html {
   box-shadow: 0 12px 28px rgba(54, 24, 24, 0.2);
 }
 
-/* REGISTRY + FAQ */
+/* ================================
+   REGISTRY — NEW PALETTE OVERRIDE
+================================ */
+
 .registry-section {
   position: relative;
   overflow: hidden;
-  background: #f8d2da;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(227, 242, 252, 0.54),
+      rgba(227, 242, 252, 0) 34%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(248, 225, 231, 0.68),
+      rgba(250, 246, 238, 0.98)
+    ),
+    var(--butter-ivory);
 }
 
 .registry-section::before {
@@ -1357,12 +1384,12 @@ html {
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(124, 1, 22, 0.05) 0px,
-      rgba(124, 1, 22, 0.05) 16px,
-      rgba(248, 210, 218, 0) 16px,
-      rgba(248, 210, 218, 0) 60px
+      rgba(117, 1, 7, 0.05) 0px,
+      rgba(117, 1, 7, 0.05) 16px,
+      rgba(250, 246, 238, 0) 16px,
+      rgba(250, 246, 238, 0) 60px
     );
-  opacity: 0.20;
+  opacity: 0.16;
   pointer-events: none;
   z-index: 0;
 }
@@ -1370,31 +1397,29 @@ html {
 .registry-inner {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 250, 243, 0.84);
   padding: 48px 32px;
   border-radius: 28px;
-  box-shadow: 0 14px 40px rgba(124, 1, 22, 0.10);
-}
-
-.registry-inner {
-  background: rgba(255, 255, 255, 0.78);
-  padding: 48px 32px;
-  border-radius: 28px;
-  box-shadow: 0 14px 40px rgba(124, 1, 22, 0.10);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 14px 40px rgba(54, 24, 24, 0.1);
 }
 
 .registry-title,
 .registry-section .section-label {
-  color: var(--cherry-cola);
+  color: var(--deep-red);
 }
 
 .registry-text {
-  color: #5b3940;
+  color: var(--text-soft);
 }
 
 .registry-button {
-  background: var(--cherry-cola);
-  color: white;
+  background: var(--deep-red);
+  color: var(--text-light);
+}
+
+.registry-button:hover {
+  background: #8a1117;
 }
 
 .faq-section {
@@ -1551,6 +1576,10 @@ html {
   align-items: center;
   justify-content: center;
 }
+/* ================================
+   REGISTRY — PAGE LAYOUT
+================================ */
+
 .registry-section.page-section {
   min-height: 80vh;
   display: flex;
