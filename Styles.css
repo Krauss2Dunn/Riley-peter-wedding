@@ -599,7 +599,176 @@ a {
 .travel-card.coming-soon p {
   opacity: 0.78;
 }
+/* =========================================================
+   Travel: Lodging Information
+   ========================================================= */
 
+.lodging-section {
+  margin-top: 90px;
+}
+
+.lodging-feature {
+  padding: 48px;
+  background: var(--card-bg-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-panel);
+  box-shadow: 0 14px 40px var(--shadow-soft);
+}
+
+.lodging-header {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.lodging-eyebrow {
+  margin: 0 0 10px;
+  color: var(--deep-red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lodging-header h2 {
+  margin: 0;
+  color: var(--deep-red);
+  font-family: var(--font-display);
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+}
+
+.lodging-copy {
+  max-width: 850px;
+}
+
+.lodging-copy p {
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.lodging-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.lodging-pro-tip {
+  padding: 18px 20px;
+  background: rgba(227, 242, 252, 0.42);
+  border-left: 3px solid var(--deep-red);
+  border-radius: 0 14px 14px 0;
+}
+
+.lodging-button-wrap {
+  margin-top: 30px;
+}
+
+.lodging-button {
+  display: inline-block;
+  padding: 16px 30px;
+  color: var(--text-light);
+  background: var(--deep-red);
+  border-radius: 999px;
+  box-shadow: 0 10px 24px var(--shadow-red);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.lodging-button:hover {
+  color: var(--text-light);
+  background: var(--deep-red-hover);
+  box-shadow: 0 12px 28px rgba(128, 3, 9, 0.22);
+  transform: translateY(-2px);
+}
+
+.lodging-dates {
+  margin-top: 60px;
+}
+
+.lodging-dates h3,
+.lodging-secondary h3 {
+  margin: 0 0 24px;
+  color: var(--deep-red);
+  font-family: var(--font-display);
+  font-size: 34px;
+}
+
+.lodging-date-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.lodging-date-card {
+  padding: 24px;
+  background: var(--card-bg-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px var(--shadow-soft);
+}
+
+.lodging-date-card p {
+  margin: 0;
+  color: var(--navy);
+  line-height: 1.55;
+}
+
+.lodging-date-card .lodging-date {
+  margin-bottom: 8px;
+  color: var(--deep-red);
+  font-weight: 700;
+}
+
+.lodging-secondary {
+  margin-top: 60px;
+  padding: 30px 32px;
+  background: var(--card-bg-strong);
+  border: 1px dashed var(--border-medium);
+  border-radius: var(--radius-card);
+}
+
+.lodging-secondary p {
+  max-width: 780px;
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.lodging-secondary-link {
+  color: var(--deep-red);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lodging-secondary-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .lodging-section {
+    margin-top: 70px;
+  }
+
+  .lodging-feature {
+    padding: 38px 26px;
+  }
+
+  .lodging-date-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lodging-secondary {
+    padding: 26px 24px;
+  }
+}
 
 /* =========================================================
    9. Things To Do
