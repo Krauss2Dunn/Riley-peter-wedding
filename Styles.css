@@ -1075,7 +1075,7 @@ a {
 }
 
 .faq-item[open] summary::after {
-  content: "â€“";
+  content: "-";
 }
 
 .faq-answer {
