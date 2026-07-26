@@ -606,7 +606,9 @@ a {
 .lodging-section {
   margin-top: 90px;
 }
-
+.lodging-best-western {
+  margin-top: 42px;
+}
 .lodging-feature {
   padding: 48px;
   background: var(--card-bg-strong);
